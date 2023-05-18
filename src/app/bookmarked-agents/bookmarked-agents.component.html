@@ -1,0 +1,12 @@
+<div>
+  <mat-grid-list
+    cols="4"
+    gutterSize="1.25rem"
+    rowHeight="19rem"
+    *ngIf="valueService.bookmarked.length > 0"
+  >
+    <mat-grid-tile *ngFor="let agent of valueService.bookmarked">
+      <app-single-agent [agent]="agent"></app-single-agent>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

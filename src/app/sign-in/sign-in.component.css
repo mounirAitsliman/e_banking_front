@@ -1,0 +1,19 @@
+.bigContainer{
+    background-image: url("../../assets/img/bg2.jpg");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+mat-card{
+    margin: 20px;
+}
+.borders{
+    border:solid 2px gray;
+}
+hr{
+    height:1px;
+    border: none;
+    background-color: rgb(195, 195, 195);
+}

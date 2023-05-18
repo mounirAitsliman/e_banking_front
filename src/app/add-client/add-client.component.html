@@ -1,0 +1,49 @@
+<div>
+    <div>
+      <div>
+        <h3>{{ "HOME.PER_INFO" | translate }}</h3>
+      </div>
+      <div class="example-container">
+        <form [formGroup]="options">
+          <mat-form-field appearance="outline">
+            <mat-label>{{ "REGISTER_CLIENT.FIRSTNAME_HOLDER"|translate }}</mat-label>
+            <input formControlName="firstName" matInput>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline">
+            <mat-label>{{ "REGISTER_CLIENT.LASTNAME_HOLDER"|translate }}</mat-label>
+            <input formControlName="lastName" matInput>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline">
+            <mat-label>{{"REGISTER_CLIENT.PHONE_HOLDER" | translate}}</mat-label>
+            <input formControlName="phone" matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{"REGISTER_CLIENT.EMAIL_HOLDER" | translate}}</mat-label>
+            <input formControlName="email" matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{"HOME.ADRESS" | translate}}</mat-label>
+            <input formControlName="address" matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>{{"CLIENT_PROFILE.SOLD" | translate}}</mat-label>
+            <input formControlName="solde" matInput>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col-12 d-flex justify-content-end" style="padding: 0 10%">
+        <button mat-flat-button (click)="OnCancel()">
+          {{ "HOME.CANCEL" | translate }}
+        </button>
+        <button mat-raised-button color="primary" (click)="create()">
+          {{ "HOME.CREATE" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+  

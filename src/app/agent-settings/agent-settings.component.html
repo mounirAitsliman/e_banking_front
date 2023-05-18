@@ -1,0 +1,91 @@
+<div id="ldsfjk32">
+<mat-card class="card">
+    <mat-card-header>
+      <div class="box">
+        <img mat-card-lg-image [src]="image" />
+        <div>
+          <mat-card-title>
+            {{
+              agentDetails.firstName + " " + agentDetails.lastName
+            }}</mat-card-title
+          >
+          <mat-card-subtitle>{{
+            "BACKOFFICE_SETTINGS.MESSAGE" | translate
+          }}</mat-card-subtitle>
+        </div>
+      </div>
+      <div class="buttons box">
+        <button mat-raised-button (click)="goBackToHome()">
+          {{ "BACKOFFICE_SETTINGS.CLOSE" | translate }}
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="saveSettings(agentDetails)"
+        >
+          {{ "BACKOFFICE_SETTINGS.SAVE" | translate }}
+        </button>
+      </div>
+    </mat-card-header>
+    <mat-divider inset></mat-divider>
+  
+    <mat-card-content>
+      <div class="inputs">
+        <mat-form-field>
+          <mat-label>{{ "BACKOFFICE_SETTINGS.F_NAME" | translate }}</mat-label>
+          <input
+            matInput
+            name="firstName"
+            [(ngModel)]="agentDetails.firstName"
+            [value]="agentDetails.firstName"
+          />
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>{{ "BACKOFFICE_SETTINGS.L_NAME" | translate }}</mat-label>
+          <input
+            matInput
+            name="lastName"
+            [(ngModel)]="agentDetails.lastName"
+            [value]="agentDetails.lastName"
+          />
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>{{ "BACKOFFICE_SETTINGS.EMAIL" | translate }}</mat-label>
+          <input
+            matInput
+            type="email"
+            name="email"
+            [(ngModel)]="agentDetails.email"
+            [value]="agentDetails.email"
+          />
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>{{ "BACKOFFICE_SETTINGS.PHONE" | translate }}</mat-label>
+          <input
+            matInput
+            type="tel"
+            name="phone"
+            [(ngModel)]="agentDetails.phone"
+            [value]="agentDetails.phone"
+          />
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        <!--
+        <mat-form-field>
+          <mat-label>{{ "BACKOFFICE_SETTINGS.JOIN_DATE" | translate }}</mat-label>
+          <input
+            matInput
+            type="date"
+            name="joinDate"
+            [(ngModel)]="agentDetails.joinDate"
+            [value]="agentDetails.joinDate"
+          />
+        </mat-form-field>
+        -->
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,21 @@
+mat-form-field {
+  margin: 0 auto;
+  width: 80%;
+}
+.search {
+  display: flex;
+}
+#container{
+  padding: 30px;
+  height: auto;
+}
+#content{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#elem{
+  margin: 10px;
+}
