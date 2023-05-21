@@ -28,7 +28,7 @@ export class BackofficeSettingsComponent implements OnInit {
   }
 
   getImageUrl() {
-    return `https://avatars.dicebear.com/api/adventurer/${this.backOfficeDetails?.firstName}.svg`;
+    return ``;
   }
 
   saveSettings(settings: any) {

@@ -24,7 +24,7 @@ export class SingleAgentComponent implements OnInit {
   ngOnInit(): void {}
 
   getImageUrl() {
-    return `https://avatars.dicebear.com/api/adventurer/${this.agent?.firstName}.svg`;
+    return ``;
   }
 
   goToProfilePage() {

@@ -25,7 +25,7 @@ export class SingleClientComponent implements OnInit {
   ngOnInit(): void {}
 
   getImageUrl() {
-    return `https://avatars.dicebear.com/api/adventurer/${this.client.firstName}.svg`;
+    return ``;
   }
 
   goToProfilePage(id: string) {

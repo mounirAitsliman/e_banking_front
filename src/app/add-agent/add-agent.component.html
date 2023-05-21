@@ -101,50 +101,6 @@
         </mat-form-field>
       </p>
     </div>
-    <div>
-      <h3>{{ "HOME.ATTACHMNT" | translate }}</h3>
-    </div>
-    <div>
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          padding: 0 10%;
-          width: 75%;
-        "
-      >
-        <mat-form-field style="width: 45%">
-          <mat-label>Description</mat-label>
-          <textarea
-            matInput
-            name="description"
-            [(ngModel)]="agent.description"
-            [value]="agent.description"
-          ></textarea>
-        </mat-form-field>
-        <div style="width: 45%">
-          <input
-            type="file"
-            class="file-input"
-            name="file"
-            (change)="onFileSelected($event)"
-            #fileUpload
-          />
-          <div class="file-upload" style="display: flex; padding: 9% 0%">
-            {{ agent?.fileName || "No file uploaded yet." }}
-
-            <button
-              mat-mini-fab
-              color="primary"
-              class="upload-btn"
-              (click)="fileUpload.click()"
-            >
-              <mat-icon>attach_file</mat-icon>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="col-12 d-flex justify-content-end" style="padding: 0 10%">
       <button mat-flat-button (click)="OnCancel()">
         {{ "HOME.CANCEL" | translate }}
