@@ -25,7 +25,6 @@ export class AgentSettingsComponent implements OnInit {
     this.agentService.getCurrentAgent().subscribe({
       next:(res:any)=>{
         this.agentDetails = res;
-        this.image="https://avatars.dicebear.com/api/adventurer/AymaneDaif.svg"
       },
       error:(error)=>{
         console.log(error)
