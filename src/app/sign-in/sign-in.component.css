@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    justify-content: center;
     height: calc(100vh - 80px);
 }
 mat-card{
@@ -15,5 +16,5 @@ mat-card{
 hr{
     height:1px;
     border: none;
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(190,190, 190);
 }
