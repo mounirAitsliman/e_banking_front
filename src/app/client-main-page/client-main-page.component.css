@@ -2,7 +2,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
 }
 .mat-card{
     height:170px;
@@ -48,6 +47,7 @@ button{
     display: flex;
     align-items: flex-start;
     overflow: hidden;
+    
 }
 #return_icon{
     height: 30px;

@@ -1,14 +1,14 @@
 <div class="d-flex" class="my_container">
     <mat-tab-group class="mt-5 ps-3">
         <mat-tab label='{{"HOME.RECHARGE" | translate}}'>
-            <div class="recharge_container px-4 d-flex justify-content-center">
+            <div class="recharge_container px-4 d-flex justify-content-center column">
                 <div id="return_icon" class="d-none" (click)="return($event.currentTarget)">
                     <mat-icon>arrow_back</mat-icon>
                 </div>
                 <div id="first_page_recharge" class="m-0 d-flex justify-content-center py-5 row smooth_transition">
-                    <div class="d-flex justify-content-md-between justify-content-center row p-0 m-0 w-100">
-                        <mat-card *ngFor="let entreprise of telecom_entreprises"
-                        class="col-lg-3 col-md-5 col-10  my-3 d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-md-between justify-content-center row p-0 m-0 w-100 flex-column ">
+                        <mat-card *ngFor="let entreprise of telecom_entreprises "
+                        class="d-flex flex-column align-items-center">
                             <img src="../../assets/img/{{entreprise}}.png">
                             <button class="w-100 m-0 p-0 btn-primary"
                             (click)="next(entreprise)">Recharge</button>
@@ -37,9 +37,7 @@
             <div class="recharge_container px-4 d-flex justify-content-center">
                 <form id="next_page_recharge" class="pt-4" #transaction_form ="ngForm"
                 (submit)="makeTransaction(transaction_form)">
-                    <h1 class="mb-4" style="font-weight: bold;">
-                        {{"HOME.SAFE_TRANSACTION" | translate}}</h1>
-                    <img src="../../assets/img/money_image.svg"  class="mb-3"/>
+                    <img src="../../assets/img/money_image.jpeg"  class="mb-3"/> 
                     <mat-form-field class="example-full-width col-10 col-md-8 col-lg-6" appearance="fill">
                         <mat-label>{{"HOME.RECEIVER" | translate}}</mat-label>
                         <input matInput placeholder='{{"HOME.RECEIVER_PLACE_HOLDER" | translate}}' name="receiverPhone"

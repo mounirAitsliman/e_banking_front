@@ -1,7 +1,4 @@
-.sidebar-content--image-client {
-    background-image: url("https://avatars.dicebear.com/api/bottts/your-custom-seed.svg?scale=111&colors[]=blue");
-    background-size: cover;
-}
+
 mat-card-header {
     align-items: center;
   }
@@ -35,7 +32,7 @@ mat-card-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 17rem;
+    max-width: 30rem;
   }
   .mat-drawer {
     top: 80px !important;

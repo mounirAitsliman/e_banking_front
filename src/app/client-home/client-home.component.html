@@ -14,7 +14,7 @@
         <mat-card class="px-4">
             <mat-card-header>
             <div mat-card-avatar class="sidebar-content--image-client"></div>
-            <mat-card-title class="mb-2">Client</mat-card-title>
+            <mat-card-title class="mb-2">{{"welcome, " + client?.firstName}}</mat-card-title>
             <mat-card-subtitle></mat-card-subtitle>
             </mat-card-header>
         </mat-card>
@@ -56,14 +56,6 @@
     </mat-sidenav>
    
     <mat-sidenav-content>
-        <button mat-mini-fab color="accent" (click)="sidenav.toggle()">
-            <mat-icon mat-list-icon *ngIf="sidenav._getWidth() < 10"
-              >chevron_right</mat-icon
-            >
-            <mat-icon mat-list-icon *ngIf="sidenav._getWidth() > 10"
-              >chevron_left</mat-icon
-            >
-          </button>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
