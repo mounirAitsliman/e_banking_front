@@ -10,7 +10,6 @@
     >
       <mat-card>
         <mat-card-header>
-          <div mat-card-avatar class="sidebar-content--image"></div>
           <mat-card-title>{{agent?.firstName+" "+agent?.lastName}}</mat-card-title>
           <mat-card-subtitle>{{agent?.email}}</mat-card-subtitle>
         </mat-card-header>
@@ -36,16 +35,16 @@
             <span>{{ "HOME.ICON_LOGOUT" | translate }}</span>
           </button>
         </mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+      <mat-list>
+        <div mat-subheader>Clients</div>
         <mat-list-item>
           <button mat-flat-button (click)="assigneclient()">
             <mat-icon mat-list-icon color="primary">contacts</mat-icon>
             <span>{{ "HOME.ASSIGNE" | translate }}</span>
           </button>
         </mat-list-item>
-        <mat-divider></mat-divider>
-      </mat-list>
-      <mat-list>
-        <div mat-subheader>Clients</div>
         <mat-list-item>
           <button mat-flat-button (click)="showBookmarkedClients()">
             <mat-icon mat-list-icon color="primary">bookmark</mat-icon>
@@ -61,14 +60,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <button mat-mini-fab color="accent" (click)="sidenav.toggle()">
-        <mat-icon mat-list-icon *ngIf="sidenav._getWidth() < 10"
-          >chevron_right</mat-icon
-        >
-        <mat-icon mat-list-icon *ngIf="sidenav._getWidth() > 10"
-          >chevron_left</mat-icon
-        >
-      </button>
+
       <!-- content -->
       <app-clients></app-clients>
     </mat-sidenav-content>

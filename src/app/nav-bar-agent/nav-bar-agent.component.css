@@ -23,7 +23,7 @@ mat-sidenav button {
     width: 100%;
     height: 100%;
     align-items: center;
-    display: flex;
+    display: contents;
 }
 mat-sidenav-content {
     margin-bottom: 90px;
